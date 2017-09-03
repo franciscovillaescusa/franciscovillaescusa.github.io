@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <header>
+
+    <div class="header">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Home Page </title>
+    <link rel="stylesheet" type="text/css" href="styles_ic.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <div class="header-name">
+          <p>  &nbsp </p>
+        <p> Initial conditions </p>
+<!--        <p> Villaescusa-Navarro </p>-->
+      </div>
+
+        <ul class="header-menu">
+          <li> <a href="index.html"> Home </a> </li>
+<!--          <div class="dropdown">-->
+          <li > <a href="#"> Research <span class="arrow">&#9660;</span></a> 
+<!--
+              <div class="dropdown-content">
+                  <a href="#"> Neutrinos </a>
+                  <a href="#"> Intensity mapping </a>
+              </div>   
+-->
+              <ul class="research-menu">
+                  <li><a href="#"> Neutrinos</a></li>
+                  <li><a href="#"> Intensity mapping </a></li>
+              </ul>
+              
+          </li>
+              
+              
+          <li> <a href="CV.pdf"> CV </a> </li>
+          <li> <a href="publications.html"> Publications <span class="arrow">&#9660;</span></a>
+                <ul class="research-menu">
+                  <li><a href="https://arxiv.org/find/all/1/OR+au:villaescusa_navarro+all:+EXACT+villaescusa_navarro/0/1/0/all/0/1"> ArXiv</a></li>
+                  <li><a href="https://ui.adsabs.harvard.edu/#search/q=%20author%3A%22villaescusa-navarro%22&sort=date%20desc%2C%20bibcode%20desc">ADS</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=4_XEZBQAAAAJ&hl=en&oi=ao">Google Scholar</a></li>
+              </ul>
+            </li>
+          <li> <a href="#"> Code </a> </li>
+        </ul>
+      </div>
+
+
+  </header>
+
+
+  <body>
+      
+      <div class="presentation">
+
+          
+          <div class="presentation-text">
+              
+        <p> The standard procedure used to generate the intial conditions of an hydrodynamic simulation is to compute displacements and peculiar velocities employing
+        the Zel'dovich approximation, or 2LPT, considering that both cold dark matter and gas have the same power spectrum and growth rates.  
+        </p>
+            
+         <img class="presentation-photo" src="img/Pk_ICs.png"/> 
+              
+          <p> The above figure shows the power spectrum (left) and growth rate (right) of cold dark matter (red), gas (blue) and total matter (black) at z=99 for a Planck cosmology from <a href="http://camb.info/"> CAMB</a>. It can be seen that gas and cold dark matter are clearly behaving differently at those redshifts, the typical ones employed when generating the initial conditions of cosmological simulations. </p>
+          <p>
+          Setting up properly the simulation initial conditions is important. There are two regimes where this could make a big different: 1) when percent precision is required and 2) at high-redshifts.
+          </p>  
+              
+              <p> In <a href="https://arxiv.org/abs/1605.05283"> Zennaro et al. 2016</a> we pointed out that in the case of massive neutrinos, where the growth factor and rate of CDM+baryons is scale-dependent, a subpercent agreement between the results of N-body on large-scales and linear theory can not be reached if the initial conditions are not properly generated.
+              </p>
+              
+              <p> There are several ways to generate the initial conditions, depending on the purpose of the simulation. Among other, one can <i>rescale</i> the final redshift power spectrum and growth rate, as we did in <a href="https://arxiv.org/abs/1605.05283"> Zennaro et al. 2016</a>, or use the output of a Boltzmann code at the simulation starting redshift, as we explained in <a href="https://arxiv.org/abs/1610.08501"> Valkenburg &amp; Villaescusa-Navarro 2017</a>.
+              </p>
+              
+              <p>Generating the simulation initial conditions requires two steps. First, obtain the power spectra and growth rates of the different components. Second, compute displacements and peculiar velocities through Zel'dovich or 2LPT.
+                  Matteo Zennaro wrote <a href="https://github.com/matteozennaro/reps">reps</a>, a publicly available code, that will rescale the final redshift power spectra and growth rates of a given cosmology to the starting redshift of a simulation. There are several codes to compute displacements and peculiar velocities for several species that take into account that growth rates/factors are scale-dependent. Wessel Valkenburg wrote <a href="https://falconb.org/"> Falcon</a> and I modified Volker Springel <a href="https://www.h-its.org/tap-software-en/ngenic-code/">N-GenIC</a> to be able to deal with this. N-GenIC-growth is available upon request.
+                  </p>
+              
+          </div>
+      </div>
+
+  </body>
+
+
+
+
+<footer class="footer">
+    
+
+    <div class="footer-info">
+        <p> Francisco Villaescusa-Navarro &copy; </p>
+        <p> Center for Computational  Astrophysics </p>
+        <p> Flatiron Institute, Simons Foundation </p>
+        <p> 162 5th Avenue, 6th floor </p>
+        <p> 10010, New York, NY, USA </p>
+    </div>
+    
+          
+    <ul class="footer-icons">
+    
+        <li><a href="mailto:villaescusa.francisco@gmail.com"> <i class="fa fa-envelope" style="font-size:36px"></i> </a> </li>
+              
+        <li> <a href="https://www.linkedin.com/in/fvillaescusanavarro"> <i class="fa fa-linkedin-square" style="font-size:36px"></i></a> </li>
+              
+        <li> <a href="https://github.com/franciscovillaescusa"> <i class="fa fa-github" style="font-size:36px"></i></a> </li>
+              
+        <li> <a href="skype:franciscoantoniovillaescusa?userinfo"><i class="fa fa-skype" style="font-size:36px"></i></a> </li>
+
+    </ul>
+
+  
+
+</footer>
+    
+    
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105709894-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+    
+</html>
