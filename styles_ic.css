@@ -43,6 +43,7 @@ header{
     width: 70em;
     display: table;
     margin: auto;
+    padding-left: 0em;
 }
 
 .header-menu li{
@@ -110,7 +111,7 @@ header{
 
 
 .presentation{
-    width: 70em;
+    width: 60em;
     padding-top: 12.5em;    
     margin: auto;  
     flex: 1 0 auto;
@@ -125,15 +126,15 @@ header{
     padding-bottom: 1em;
     float: left;
 */
-    width: 50em;
+    width: 42em;
     margin: auto;
     padding-top: 0em;
     display: block;
 }
 
 .presentation-text {
-    margin-left: -0.5em;  Align text with photo on left part 
-    margin-top: -0.1em;   Align text with photo on top part 
+    margin-left: -0.5em; 
+    margin-top: -0.1em;   
     padding: 0.5em;
     font-size: 1.4em;
     margin: auto;
@@ -141,37 +142,6 @@ header{
 
 
 
-.footer{
-    background-color: lightgrey;
-    width: 70em;
-    margin: auto;
-}
-
-
-.footer-info{
-    line-height: 0.3em;
-    padding-left: 8%;
-    margin-left: 0em;
-    padding-right: 14%;
-    float: left;
-}
-
-
-.footer-icons{
-    width: 40%;
-    display: table;
-    margin: auto;
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
-}
-
-
-.footer-icons li {
-    display: table-cell; 
-    width: auto;
-    padding-right: 20%;
-    text-align: center;
-}
 
 
 

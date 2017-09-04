@@ -1,0 +1,28 @@
+.footer{
+    background-color: lightgrey;
+    width: 60em;
+    margin: auto;
+}
+
+.footer-info{
+    line-height: 0.3em;
+    padding-left: 4%;
+    margin-left: 0em;
+    padding-right: 16%;
+    float: left;
+}
+
+.footer-icons{
+    width: 30%;
+    display: table;
+    margin: auto;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+
+.footer-icons li {
+    display: table-cell; 
+    width: auto;
+    padding-right: 20%;
+    text-align: center;
+}
