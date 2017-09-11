@@ -1,0 +1,168 @@
+html{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+body{
+    background-color: white;
+    text-align: justify;
+    font-family: serif;
+/*    height: 65em;*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0em;
+}
+
+
+
+.header{
+    background-image: url('img/neutrinos.png');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+
+.header-name {
+  color: white;
+  font-size: 50px;
+  margin-top: -0.5em;
+  padding: 0em;
+  line-height: 0.1em;
+  margin-bottom: 1.7em;
+}
+
+.header-menu {
+    position: relative;
+    width: 70em;
+    display: table;
+    margin: auto;
+    padding-left: 0em;
+}
+
+.header-menu li{
+  display: table-cell;
+  text-align: center;
+  width: 10%;
+}
+
+.header-menu li a{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.header-menu li:hover .research-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.arrow{
+    font-size: 13px;
+}
+
+.header-menu li:hover ul.research-menu{
+    display: block;
+    width:17%;
+    padding-left: 0em;
+    padding-right:0em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
+    position:absolute;
+    top:100%;
+    z-index:999;
+    background-image: url('img/neutrinos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.research-menu {
+    display: none;
+}
+ 
+.research-menu li {
+    display: block;
+    width: 12em;
+    line-height: 1em;
+}
+ 
+.research-menu li a {
+    padding: 10px 0px 10px 10px;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+ 
+
+.publications_links{
+    width: 55em;
+    margin: auto;
+    padding-left: 0em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.publications_links li{
+    display: table-cell;
+    margin: auto;
+    width: 16em;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.video_neutrinos{
+    width: 55em;
+    height: 36em;
+    display: block;
+    margin: auto;
+    padding-top: 0em;
+    margin-top: -1em;
+}
+
+.presentation{
+    width: 60em;
+    padding-top: 11em;    
+    margin: auto;  
+    flex: 1 0 auto;
+}
+
+.presentation-photo{
+    width: 50em;
+    margin: auto;
+    padding-top: 2em;
+    display: block;
+}
+
+.presentation-text {
+    margin-top: 0em;   
+    padding: 0.0em;
+    padding-top: 2em;
+    font-size: 1.4em;
+    margin: auto;
+    line-height: 1.4em;
+
+}
+
+.publication-list li{
+    margin-bottom: 3em;
+}
+
+
+
+
+
+
