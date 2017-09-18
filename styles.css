@@ -19,6 +19,10 @@ body{
 
 
 
+
+
+
+/* ##############  HEADER ############## */
 .header{
     background-image: url('img/LSS.png');
     text-align: center;
@@ -26,11 +30,89 @@ body{
     background-size: cover;
     height: 200px;
     width: 100%;
-    position: fixed;
+    position: absolute;
 }
 
+.header_research{
+    background-image: url('img/research.png');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+
+.header_im{
+    background-image: url('img/im.png');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+
+.header_neutrinos{
+    background-image: url('img/neutrinos.png');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+
+.header_publications{
+    background-image: url('img/books.png');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+
+.header_code{
+    background-image: url('img/code.png');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+
+.header_ic{
+    background-color: darkblue;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+
+
+.white_color{
+    color: white;
+}
+
+.yellow_color{
+    color: yellow;
+}
+
+.black_color{
+    color: black;
+}
+
+.red_color{
+    color: orange;
+}
+
+
 .header-name {
-  color: white;
+/*  color: blue;*/
   font-size: 50px;
   margin-top: -0.5em;
   padding: 0em;
@@ -53,7 +135,7 @@ body{
 }
 
 .header-menu li a{
-  color: white;
+/*  color: white;*/
   text-decoration: none;
   font-size: 25px;
 }
@@ -79,7 +161,8 @@ body{
     position:absolute;
     top:100%;
     z-index:999;
-    background-image: url('img/LSS.png');
+/*    background-image: url('img/LSS.png');*/
+    background-color: lightgray;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -110,6 +193,29 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##############  BODY ############## */
 .presentation{
     width: 60em;
     padding-top: 12.5em;    
@@ -135,6 +241,124 @@ body{
 }
 
 
+.publications_links{
+    width: 55em;
+    margin: auto;
+    padding-left: 0em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.publications_links li{
+    display: table-cell;
+    margin: auto;
+    width: 16em;
+    text-align: center;
+    font-size: 30px;
+}
+
+.publication-list li{
+    margin-bottom: 3em;
+}
+
+.video_neutrinos{
+    width: 55em;
+    height: 36em;
+    display: block;
+    margin: auto;
+    padding-top: 0em;
+    margin-top: -1em;
+}
+
+.image1{
+    width: 50em;
+    margin: auto;
+    padding-top: 0em;
+    display: block;
+}
+
+.image2{
+    width: 42em;
+    margin: auto;
+    padding-top: 0em;
+    display: block;
+}
+
+.research_field{
+    height: 25em;
+    width: 25em;
+    margin-top: 2em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    margin-bottom: 2em;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##############  FOOTER ############## */
+.footer{
+    background-color: lightgrey;
+    width: 60em;
+    margin: auto;
+}
+
+.footer-info{
+    line-height: 0.3em;
+    padding-left: 4%;
+    margin-left: 0em;
+    padding-right: 16%;
+    float: left;
+}
+
+.footer-icons{
+    width: 30%;
+    display: table;
+    margin: auto;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+
+.footer-icons li {
+    display: table-cell; 
+    width: auto;
+    padding-right: 20%;
+    text-align: center;
+}
 
 
 

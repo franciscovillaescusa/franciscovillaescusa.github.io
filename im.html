@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <header>
+
+    <div class="header_im">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Francisco Villaescusa-Navarro : Intensity mapping </title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <div class="header-name">
+        <p> &nbsp </p>
+        <p class="white_color"> 21cm intensity mapping </p>
+      </div>
+
+        <ul class="header-menu">
+          <li> <a href="index.html" class="white_color"> Home </a> </li>
+          <li > <a href="research.html" class="white_color"> Research <span class="arrow">&#9660;</span></a> 
+
+              <ul class="research-menu">
+                  <li><a href="neutrinos.html" class="black_color"> Neutrinos</a></li>
+                  <li><a href="im.html" class="black_color"> Intensity mapping </a></li>
+              </ul>
+              
+          </li>
+              
+              
+          <li> <a href="CV.pdf" class="white_color"> CV </a> </li>
+          <li> <a href="publications.html" class="white_color"> Publications</a></li>
+          <li> <a href="code.html" class="white_color"> Code </a> </li>
+        </ul>
+      </div>
+
+            <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+      
+  </header>
+
+
+  <body>
+
+    <div class="presentation">
+
+<!--    <img class="presentation-photo" src="img/Photo.png"/>-->
+
+
+      <div class="presentation-text">
+        <p>
+        The spatial distribution of matter in the Universe embeds an enormous information on fundamental physical quantities like the age, geometry and expansion rate of the Universe, the amount and nature of dark matter and dark energy, the neutrino masses and the properties of the Universe's initial conditions. Unfortunately, the matter distribution is not directly observable, but can only be inferred through tracers of it such as galaxies.
+        </p>
+        <p>
+        A different way to trace the Universe's large-scale structure is by detecting the 21cm emission from cosmic neutral hydrogen using the intensity mapping technique.   The idea is to carry out a low angular-resolution survey where the emission from many unresolved galaxies and HI blobs is measured.
+        </p>
+        <p>
+        </p>
+              
+        The method is illustrated in the below image. The left panel shows the spatial distribution of galaxies, represented by white dots. Each galaxy hosts a given HI mass. A radio-telescope scanning that region of the sky will observe the distribution shown in the right panel. It can be seen that the fluctuations in that field trace the fluctuations in the HI/galaxy field and therefore the fluctuations in the underlying matter field. </p>
+          <p></p>
+
+      </div>
+
+     <img class="image1" src="img/im_galaxies.png"/>
+        
+    <div class="presentation-text">
+        <p> The advantages of this technique are numerous: 1) very large areas of the sky can be surveyed very efficiently, 2) since a line is detected, it is spectroscopic in nature, 3) it can sample the distribution of neutral hydrogen from \( z=0 \) to \(z \simeq30 \). These unique features make the intensity mapping technique a tool to bring cosmology to a different level. 
+        </p>I am mainly interested in the usage of the intensity mapping technique in the post-reionization era:, \( z\lesssim6\). My research is focused on developing the theoretical framework needed to extract the maximum information from these surveys and to design the best strategy to achieve that. 
+        <p>
+            In order to extract the maximum information from 21cm surveys the analysis can not be limited to the power spectrum, as non-linear gravitational evolution induces a cascade of information from it to higher-order correlations. A way to deal with this is to predict the whole 21cm density field. Doing this requires running hydrodynamic simulations, coupled with radiative-transfer calculations, over large cosmological volumes with resolution enough to resolve the smallest galaxies that host HI. Nowadays, this is computationally unfeasible and will remain like that for the near future.
+        </p>
+        <p>
+            An alternative to this approach is to establish a link between the cosmic web elements, halos, voids, filaments, and the spatial distribution of HI. In that case HI can be "painted" a-posteriori in the halos/filaments/voids of N-body or pseudo-N-body simulations, which are computionally less expensive. 
+        </p>
+        <p>
+            I run and analyze high-resolution hydrodynamic simulations to characterize and determine the parameters of the HI-cosmic web link. In <a href="https://arxiv.org/abs/1405.6713">this paper</a> we investigated that link and compare the distribution of HI from hydrodynamic simulations versus HI "painted" on top of halos.
+        </p>
+        <p>
+            I have also studied the HI-cosmic web link through an analytic formalism that I developed with Emanuele Castorina aimed at reproducing the HI abundance and clustering from observations. We used that formalism to point out that the 21cm power spectrum will barely be affected by shot-noise. Details can be found <a href="https://arxiv.org/abs/1609.05157">here</a>.
+        </p>
+        <p>
+            A major challenge for 21cm intensity mapping is the presence of galactic and extragalactic foregrounds, whose amplitude is several orders of magniture higher than the one of the cosmological signal. A way to circunvent this problem is through cross-correlations. In <a href="https://arxiv.org/abs/1410.7393"> this paper</a> we showed how the cross-correlation of 21cm maps with Lyman break galaxies (LBG) can boost the S/N ratio of the HI signal in the redshift range \(3< z < 5 \). We also showed through simulations that while both the 21cm auto-power spectrum and LBG-21cm cross-spectra can be reliably recovered after the cleaning of smooth-spectrum foreground contamination, only the cross-power is robust to problematic non-smooth foregrounds like polarized synchrotron emission.
+        </p>
+        <p> In <a href="https://arxiv.org/abs/1611.07527">this paper</a> we studied the cross-correlation between the Ly\(\alpha\)-forest and 21cm maps in the redshift range \(2 < z < 4\). We found that those fields are anticorrelated on large scales and showed that non-linearities arise on scales as large as \(0.2~h{\rm Mpc}^{-1}\). We showed how the information embedded in the cross-power spectrum can be used to shrink the error on the cosmological and astrophysical parameters.
+        </p>
+        <p>
+            We have also shown that 21cm intensity mapping maps in the post-reionization era can be used to learn about the nature of dark matter and to weigh neutrinos. In <a href="https://arxiv.org/abs/1502.06961"> this paper</a> we demonstrated how warm dark matter affects the shape and amplitude of the 21cm power spectrum, a signature that can be used to constraint its mass. We forecasted that SKA1-LOW can place bounds of \(m_{\rm WDM}\geqslant4~{\rm keV}\) with 5000 hours of observations.
+        </p>
+        <p>In <a href="https://arxiv.org/abs/1507.05102"> this paper</a> we studied the impact of neutrino masses on the abundance and clustering of HI in the fully non-linear regime. We showed that their effect can easily be understood taking into account the signatures neutrinos leave on the halo mass function, halo bias...etc. We forecasted that SKA1-LOW + SKA1-MID + Euclid + Planck can constraint the sum of the neutrino masses with an error of \(34~{\rm meV}~(1\sigma)\).
+        </p>
+        <p> We have pointed out galaxy clusters host a large amount of neutral hydrogen (see <a href="https://arxiv.org/abs/1510.04277">this paper</a>). Besides, we have shown that astrophysical processes like AGN feedback strongly affect the HI content of galaxy clusters. Since the amplitude and shape of the 21cm power spectrum, even on large scales, is sensitive to the HI mass contained in clusters, we proposed the usage of 21cm maps to extract astrophysical information.
+        </p>
+        <p>One of the most robust cosmological observables is the BAO peak, whose location allow us to constrain the angular diameter distance and the Hubble function. The BAO peak is the target of several 21cm surveys like <a href="https://chime-experiment.ca/">CHIME</a> or <a href="http://www.jb.man.ac.uk/research/BINGO/">BINGO</a>. Unfortunately, non-linear gravitational evolution induces a damping, broadening and shift in the peak that difficults the measurement of its location. Reconstruction is a technique whose purpose is to undo the effect of non-linearities. In <a href="https://arxiv.org/abs/1610.05768">this paper</a> we proposed a new reconstruction method that can be applied to observations that consists of pixels, like 21cm intensity mapping. 
+        </p>
+        <p>In <a href="https://arxiv.org/abs/1609.00019">this paper</a> we showed that the isotropic or angular BAO peak will not be detected by SKA1-MID given its poor angular resolution. We however demonstrated that the radial BAO peak can be detected by it and percent constraints on the Hubble function can be placed. We proposed the pipeline to be used in order to achieve that.
+        </p>
+        
+        
+        
+    </div>
+        
+      
+      
+      
+    </div>
+
+  </body>
+
+
+
+
+<footer class="footer">
+    
+
+    <div class="footer-info">
+        <p> Francisco Villaescusa-Navarro &copy; </p>
+        <p> Center for Computational  Astrophysics </p>
+        <p> Flatiron Institute, Simons Foundation </p>
+        <p> 162 5th Avenue, 6th floor </p>
+        <p> 10010, New York, NY, USA </p>
+    </div>
+    
+          
+    <ul class="footer-icons">
+    
+        <li><a href="mailto:villaescusa.francisco@gmail.com"> <i class="fa fa-envelope" style="font-size:36px"></i> </a> </li>
+              
+        <li> <a href="https://www.linkedin.com/in/fvillaescusanavarro"> <i class="fa fa-linkedin-square" style="font-size:36px"></i></a> </li>
+              
+        <li> <a href="https://github.com/franciscovillaescusa"> <i class="fa fa-github" style="font-size:36px"></i></a> </li>
+              
+        <li> <a href="skype:franciscoantoniovillaescusa?userinfo"><i class="fa fa-skype" style="font-size:36px"></i></a> </li>
+
+    </ul>
+
+  
+
+</footer>
+    
+    
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105709894-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+    
+</html>
