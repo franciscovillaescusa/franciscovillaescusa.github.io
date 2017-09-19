@@ -112,7 +112,6 @@ body{
 
 
 .header-name {
-/*  color: blue;*/
   font-size: 50px;
   margin-top: -0.5em;
   padding: 0em;
@@ -122,16 +121,23 @@ body{
 
 .header-menu {
     position: relative;
-    width: 70em;
-    display: table;
+/*
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+*/
+    width: 60em;
     margin: auto;
+    display: table;
+/*    margin: auto;*/
     padding-left: 0em;
+    padding-right: 0em;
 }
 
 .header-menu li{
   display: table-cell;
   text-align: center;
-  width: 10%;
+/*  width: 0%;*/
 }
 
 .header-menu li a{
