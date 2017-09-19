@@ -4,25 +4,42 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
   <loc>https://franciscovillaescusa.github.io/</loc>
-  <lastmod>2017-09-04T19:45:51+00:00</lastmod>
+  <lastmod>2017-09-19T01:56:25+00:00</lastmod>
 </url>
 <url>
   <loc>https://franciscovillaescusa.github.io/index.html</loc>
-  <lastmod>2017-09-04T19:45:51+00:00</lastmod>
+  <lastmod>2017-09-19T01:56:25+00:00</lastmod>
+</url>
+<url>
+  <loc>https://franciscovillaescusa.github.io/research.html</loc>
+  <lastmod>2017-09-19T01:56:25+00:00</lastmod>
 </url>
 <url>
   <loc>https://franciscovillaescusa.github.io/CV.pdf</loc>
-  <lastmod>2017-09-04T19:45:51+00:00</lastmod>
+  <lastmod>2017-09-19T01:56:25+00:00</lastmod>
 </url>
 <url>
   <loc>https://franciscovillaescusa.github.io/publications.html</loc>
-  <lastmod>2017-09-04T19:45:51+00:00</lastmod>
+  <lastmod>2017-09-19T01:56:25+00:00</lastmod>
 </url>
 <url>
   <loc>https://franciscovillaescusa.github.io/code.html</loc>
-  <lastmod>2017-09-04T19:45:51+00:00</lastmod>
+  <lastmod>2017-09-19T01:56:25+00:00</lastmod>
+</url>
+<url>
+  <loc>https://franciscovillaescusa.github.io/neutrinos.html</loc>
+  <lastmod>2017-09-19T01:56:25+00:00</lastmod>
+</url>
+<url>
+  <loc>https://franciscovillaescusa.github.io/im.html</loc>
+  <lastmod>2017-09-19T01:56:25+00:00</lastmod>
+</url>
+<url>
+  <loc>https://franciscovillaescusa.github.io/uc.html</loc>
+  <lastmod>2017-09-19T01:56:25+00:00</lastmod>
 </url>
 </urlset>
