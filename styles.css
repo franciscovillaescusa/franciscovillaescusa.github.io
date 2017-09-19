@@ -93,6 +93,16 @@ body{
     position: absolute;
 }
 
+.header_uc{
+    background-color: black;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+
 
 .white_color{
     color: white;
@@ -137,7 +147,7 @@ body{
 .header-menu li{
   display: table-cell;
   text-align: center;
-/*  width: 0%;*/
+  width: 5em;
 }
 
 .header-menu li a{
@@ -285,6 +295,13 @@ body{
 
 .image2{
     width: 42em;
+    margin: auto;
+    padding-top: 0em;
+    display: block;
+}
+
+.image3{
+    width: 60em;
     margin: auto;
     padding-top: 0em;
     display: block;
