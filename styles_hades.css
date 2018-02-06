@@ -42,6 +42,7 @@ body{
     text-decoration: none;
 }
 
+
 .publication_list{
     margin: 0;
     padding-left: 10%;
@@ -84,6 +85,10 @@ body{
     margin: 0%;
     padding: 0% 5% 1.5% 0%;
     font-size: 1.5vw;
+}
+
+.first_line{
+    font-weight: bold;
 }
 
 .hades-photo{
@@ -152,6 +157,3 @@ body{
     display: block;
 }
 
-.first_line{
-    font-weight: bold;
-}
