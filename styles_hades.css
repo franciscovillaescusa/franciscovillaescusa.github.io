@@ -99,7 +99,7 @@ body{
     width: 40%;
 }
 
-.sim, .sim2{
+.sim, .sim2, .sim4{
     padding: 3% 5% 3% 5%;
     float: left;
     width: 15%;
@@ -132,6 +132,18 @@ body{
     text-align: center;
     font-size: 1.8vw;
     color: darkred;
+    font-weight: bold;
+}
+
+.sim4 p{
+    margin: 0%;
+    padding: 10% 0% 15% 0%;
+    background-color: lightcoral;    
+    border: 0.7vw solid black;
+    opacity: 0.6;
+    text-align: center;
+    font-size: 1.8vw;
+    color: purple;
     font-weight: bold;
 }
 
