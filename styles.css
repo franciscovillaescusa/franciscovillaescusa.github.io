@@ -308,18 +308,34 @@ body{
 }
 
 .research_field{
-    height: 25em;
-    width: 25em;
-    margin-top: 2em;
-    margin-left: 2.5em;
-    margin-right: 2.5em;
-    margin-bottom: 2em;
+    height: 17em;
+    width: 17em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
     float: left;
 }
 
+.research_field2{
+    height: 17em;
+    width: 17em;
+    margin-top: 1em;
+    margin-left: 10em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    float: left;
+}
 
-
-
+.research_field3{
+    height: 17em;
+    width: 17em;
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 10em;
+    margin-bottom: 1em;
+    float: left;
+}
 
 
 
