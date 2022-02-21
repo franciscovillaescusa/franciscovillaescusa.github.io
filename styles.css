@@ -233,8 +233,8 @@ body{
 
 /* ##############  BODY ############## */
 .presentation{
-    width: 60em;
-    padding-top: 12.5em;    
+    width: 70em;
+    padding-top: 15.5em;    
     margin: auto;  
     flex: 1 0 auto;
 }
@@ -268,7 +268,7 @@ body{
 .publications_links li{
     display: table-cell;
     margin: auto;
-    width: 16em;
+    width: 15em;
     text-align: center;
     font-size: 30px;
 }
