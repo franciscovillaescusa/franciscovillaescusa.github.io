@@ -381,7 +381,8 @@ body{
 }
 
 .denario-section .denario-text-content {
-  flex: 1; /* This will make the text content take up the left side */
+    flex: 1; /* This will make the text content take up the left side */
+    font-size: 1.4em;
 }
 
 .denario-section img {
