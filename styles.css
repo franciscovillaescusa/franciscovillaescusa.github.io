@@ -374,8 +374,21 @@ body{
 }
 
 
+.denario-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
 
+.denario-section .denario-text-content {
+  flex: 1; /* This will make the text content take up the left side */
+}
 
+.denario-section img {
+  width: 100%; /* Adjust the image width as needed */
+  max-width: 500px; /* Optional: Sets a maximum size for the image */
+  height: auto;
+}
 
 
 
