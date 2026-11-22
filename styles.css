@@ -138,18 +138,20 @@ body{
     margin-left: 10%;
     margin-right: 10%;
 */
-    width: 60em;
+    width: auto;
     margin: auto;
-    display: table;
+    display: flex;
+    justify-content: center;
+    gap: 0 3em;
 /*    margin: auto;*/
     padding-left: 0em;
     padding-right: 0em;
 }
 
 .header-menu li{
-  display: table-cell;
+  display: block;
   text-align: center;
-  width: 5em;
+  white-space: nowrap;
 }
 
 .header-menu li a{
@@ -507,6 +509,8 @@ a { color: #1a5fb4; }
 
 /* ##############  HOME: TWO VIDEOS SIDE BY SIDE ############## */
 .video-pair { clear: both; display: flex; gap: 1.2em; margin: 1.5em 0 0.5em; }
+.video-pair figure { flex: 1 1 0; margin: 0; min-width: 0; }
+.video-pair figcaption { text-align: center; color: #666; font-size: 1.05em; margin-top: 0.4em; }
 .video-pair video { flex: 1 1 0; min-width: 0; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: #000; }
 
 /* ##############  HOME: PROJECT CARDS ############## */
@@ -606,4 +610,32 @@ a { color: #1a5fb4; }
     .footer-info p { margin: 0.2em 0; }
     .footer-icons { width: 100%; display: flex; justify-content: space-between; padding: 0.8em 0 0; margin: 0; }
     .footer-icons li { display: block; padding: 0; }
+}
+
+
+/* ##############  FOOTER (full-width bar) ############## */
+.footer {
+    width: 100%; box-sizing: border-box; margin: 2.5em 0 0;
+    background: #f5f5f5; border-top: 1px solid #e2e2e2;
+    display: flex; align-items: center; justify-content: space-between; gap: 1em 2em;
+    padding: 1em max(24px, calc((100% - 70em) / 2));
+}
+.footer-info { float: none; padding: 0; line-height: 1.35; color: #555; font-size: 0.95em; }
+.footer-info p { margin: 0; }
+.footer-icons { display: flex; width: auto; margin: 0; padding: 0; gap: 1.3em; list-style: none; align-items: center; }
+.footer-icons li { display: block; padding: 0; width: auto; }
+.footer-icons a { color: #8a8a8a; text-decoration: none; transition: color 0.15s; }
+.footer-icons i { font-size: 26px !important; color: inherit !important; }
+.footer-icons svg { width: 23px; height: 23px; vertical-align: -2px !important; }
+.footer-icons a[href^="mailto"]:hover { color: #c5221f; }
+.footer-icons a[href*="linkedin"]:hover { color: #0a66c2; }
+.footer-icons a[href*="github"]:hover { color: #181717; }
+.footer-icons a[href*="scholar"]:hover { color: #4285f4; }
+.footer-icons a[href*="orcid"]:hover { color: #a6ce39; }
+.footer-icons a[href*="adsabs"]:hover { color: #1c4b8a; }
+.footer-icons a[href*="youtube"]:hover { color: #ff0000; }
+.footer-icons a[href*="x.com"]:hover { color: #000; }
+@media (max-width: 760px) {
+    .footer { flex-direction: column; align-items: flex-start; padding: 1em 16px; }
+    .footer-icons { width: 100%; justify-content: space-between; gap: 0; }
 }
