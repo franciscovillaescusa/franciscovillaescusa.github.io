@@ -472,6 +472,14 @@ body{
 .pub-title { font-weight: bold; }
 .pub-atlas { font-size: 1.2em; text-align: left; }
 
+/* ##############  MACHINE LEARNING PAGE ############## */
+.ml-page { font-size: 1.25em; width: 56em; padding-bottom: 2em; }  /* 56em x 1.25 = the usual 70em column */
+.ml-intro { font-size: 1.1em; margin-top: 1.5em; }
+.ml-heading { font-size: 1.5em; font-weight: normal; margin: 1.5em 0 0.3em; border-bottom: 2px solid orange; padding-bottom: 0.15em; text-align: left; }
+.ml-papers { text-align: left; margin-top: 0.3em; }
+.ml-papers li { margin-bottom: 0.25em; }
+.ml-more { margin-top: 2em; text-align: center; }
+
 /* ##############  SMALLER SCREENS ############## */
 /* Desktop layout above is unchanged; these rules only apply to narrower windows. */
 
@@ -535,6 +543,8 @@ body{
     .publications_links { padding-top: 1em; padding-bottom: 1em; }
     .publications_links li { display: block; width: auto; font-size: 22px; margin: 0.4em 0; }
     .pub-full { font-size: 1.1em; }
+    .ml-page { font-size: 1.05em; }
+    .ml-heading { font-size: 1.3em; }
     .pub-heading { font-size: 1.5em; }
     .pub-list, .pub-atlas { font-size: 1.05em; }
 

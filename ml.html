@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <header>
+
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XRRM15GMS9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XRRM15GMS9');
+</script>
+
+<!--      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.8">-->
+    <div class="header_research">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Francisco Villaescusa-Navarro : Machine Learning &amp; AI </title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <div class="header-name">
+        <p class="red_color"> &nbsp </p>
+        <p class="red_color"> Machine Learning &amp; AI </p>
+      </div>
+
+        <ul class="header-menu">
+          <li> <a href="index.html" class="red_color"> Home </a> </li>
+          <li > <a href="research.html" class="red_color"> Research </a> 
+
+<!--
+              <ul class="research-menu">
+                  <li><a href="neutrinos.html" class="black_color"> Neutrinos</a></li>
+                  <li><a href="im.html" class="black_color"> Intensity mapping </a></li>
+              </ul>
+-->
+              
+          </li>
+              
+              
+          <li> <a href="CV.pdf" class="red_color"> CV </a> </li>
+          <li> <a href="publications.html" class="red_color"> Publications</a></li>
+          <li> <a href="code.html" class="red_color"> Code & Data</a> </li>
+        </ul>
+      </div>
+      
+  </header>
+
+
+  <body>
+
+    <div class="presentation ml-page">
+
+      <p class="ml-intro">The simulation suites I lead, such as <a href="https://quijote-simulations.readthedocs.io">Quijote</a>, <a href="https://camels.readthedocs.io">CAMELS</a> and <a href="https://dreams-project.readthedocs.io">DREAMS</a>, produce extremely large, complex, multimodal and high-dimensional datasets. Machine learning is one of the best tools to maximize their scientific return. My work in this area has two main goals: extracting cosmological information from non-linear scales, where traditional methods fail, and solving problems for which no analytic theory exists. More recently, I have been developing AI agents designed to act as research partners across scientific disciplines.</p>
+
+      <h2 class="ml-heading">Simulation-based inference with baryonic effects</h2>
+      <p>Since 2021, my collaborators and I have been applying simulation-based inference to data from hydrodynamic simulations, with the goal of extracting cosmological information from the smallest possible scales while marginalizing over uncertain astrophysical processes such as supernova and AGN feedback. In this work, we showed that neural networks can infer cosmological parameters directly from simulated fields, at the field level, while marginalizing over baryonic effects (<a href="https://arxiv.org/abs/2109.09747">Multifield Cosmology with AI</a>, <a href="https://arxiv.org/abs/2109.10915">the CAMELS Multifield Dataset</a>, <a href="https://arxiv.org/abs/2109.10360">robust marginalization at the field level</a>).</p>
+      <p>Answering one question often leads to deeper ones. We found that models trained on simulations run with one code can perform poorly on data from a different code, a critical problem for robust cosmological inference. This led us to develop domain adaptation techniques (<a href="https://arxiv.org/abs/2311.01588">2311.01588</a>) and to identify inputs, such as phase-space information, that make models robust across simulation codes (<a href="https://arxiv.org/abs/2302.14101">2302.14101</a>).</p>
+
+      <h2 class="ml-heading">Geometric and topological deep learning</h2>
+      <p>Cosmological data, such as galaxy catalogs and halo distributions, are naturally irregular point clouds and graphs, not the regular grids assumed by convolutional networks. Since 2021, my collaborators and I have been developing geometric deep learning methods for cosmology: graph neural networks, and more recently topological neural networks, that respect the symmetries of the data, such as rotational and translational invariance. These models can extract cosmological information directly from raw catalogs, marginalize over baryonic uncertainties, and work without artificial scale cuts, something traditional summary statistics cannot do.</p>
+      <ul class="ml-papers">
+        <li>Inferring halo masses with graph neural networks (<a href="https://arxiv.org/abs/2111.08683">2111.08683</a>)</li>
+        <li>Learning cosmology and clustering with cosmic graphs (<a href="https://arxiv.org/abs/2204.13713">2204.13713</a>)</li>
+        <li>Robust field-level likelihood-free inference with galaxies (<a href="https://arxiv.org/abs/2302.14101">2302.14101</a>)</li>
+        <li>Predicting interloper fraction with graph neural networks (<a href="https://arxiv.org/abs/2309.05850">2309.05850</a>)</li>
+        <li>Cosmology from point clouds with dark matter halos from Quijote (<a href="https://arxiv.org/abs/2405.13119">2405.13119</a>)</li>
+        <li>Cosmology with topological deep learning (<a href="https://arxiv.org/abs/2505.23904">2505.23904</a>)</li>
+      </ul>
+
+      <h2 class="ml-heading">Other machine learning applications</h2>
+      <p>Machine learning often gives better results than traditional approaches, or works where no traditional approach exists. My collaborators and I have applied a wide range of techniques to problems in cosmology and astrophysics:</p>
+      <ul class="ml-papers">
+        <li>Symbolic regression to discover universal relations in subhalo properties (<a href="https://arxiv.org/abs/2109.04484">2109.04484</a>)</li>
+        <li>Inpainting of hydrodynamic maps with deep learning (<a href="https://arxiv.org/abs/2109.07070">2109.07070</a>)</li>
+        <li>Diffusion models for probabilistic reconstruction of dark matter fields from galaxies (<a href="https://arxiv.org/abs/2403.10648">2403.10648</a>)</li>
+        <li>Diffusion models and point clouds to emulate satellite galaxies and subhalos in DREAMS (<a href="https://arxiv.org/abs/2409.02980">2409.02980</a>)</li>
+        <li>Super-resolution emulation of cosmological simulations (<a href="https://arxiv.org/abs/2001.05519">2001.05519</a>)</li>
+      </ul>
+      <p>I also enjoy exploring unconventional ideas. For example, we found that, in simulations, the properties of a single galaxy carry information about the value of cosmological parameters (<a href="https://arxiv.org/abs/2201.02202">Cosmology with one galaxy?</a>). Results from simulations cannot be directly translated to the real Universe, but surprising results like this help us understand the physics in the simulations, and may point to mechanisms in the real Universe not considered before.</p>
+
+      <h2 class="ml-heading">AI agents for scientific discovery</h2>
+      <p>Together with Boris Bolliet and Pablo Villanueva-Domingo, I lead the development of <a href="https://github.com/Denario-AI/Denario">Denario</a>, an open-source AI research assistant (<a href="https://arxiv.org/abs/2510.26887">paper</a>, <a href="https://denario.readthedocs.io">documentation</a>). Denario is made of multiple AI agents that collaborate and compete to carry out specific tasks or end-to-end research: generating ideas, searching the literature, developing research plans, writing and executing code, making plots, and drafting and reviewing papers. Given a dataset, a Denario run typically takes hours, so researchers can explore many more hypotheses, including unconventional ones that might otherwise be considered too risky. Denario cannot yet produce publication-ready papers without significant human guidance, and it is designed to help scientists, not to replace them.</p>
+      <p>Denario is a large interdisciplinary effort, with domain experts from twelve fields, from astrophysics, biology, chemistry and medicine to quantum physics, neuroscience, mathematics and philosophy. One of the papers it generated was accepted at <a href="https://agents4science.stanford.edu/">Agents4Science</a>, the first conference where AI is both the main author and the reviewer. Denario works with both commercial and open-source language models: as AI becomes central to research, scientists need transparent, openly developed tools, and should play a leading role in shaping how AI is used in science.</p>
+      <p>Current directions include a human-in-the-loop interface where researchers approve, reject or iterate over every step; a fully autonomous mode; and automatic validation of AI-generated results, building on tools such as <a href="https://skepthical-ai.org/">Skepthical</a>. We are also studying how to measure the ability of AI agents to make genuine discoveries (<a href="https://arxiv.org/abs/2610.00492">EurekaBench</a>).</p>
+
+      <p class="ml-more">See also: <a href="publications.html">selected publications</a> &middot; <a href="code.html">code &amp; data</a></p>
+
+    </div>
+
+  </body>
+
+
+
+
+<footer class="footer">
+    
+
+    <div class="footer-info">
+        <p> Francisco Villaescusa-Navarro &copy; </p>
+        <p> Flatiron Institute, Simons Foundation </p>
+        <p> 162 5th Avenue, New York, NY, 10010, USA </p>
+    </div>
+    
+          
+    <ul class="footer-icons">
+    
+        <li><a href="mailto:villaescusa.francisco@gmail.com"> <i class="fa fa-envelope" style="font-size:36px"></i> </a> </li>
+              
+        <li> <a href="https://www.linkedin.com/in/fvillaescusanavarro"> <i class="fa fa-linkedin-square" style="font-size:36px"></i></a> </li>
+              
+        <li> <a href="https://github.com/franciscovillaescusa"> <i class="fa fa-github" style="font-size:36px"></i></a> </li>
+              
+	<li><a href="https://www.youtube.com/channel/UCbYNOclPvIgfPUHc9JjKazA"><i class="fa fa-youtube-play" style="font-size:36px;color:red"></i></a></li>
+
+	<li><a href="https://x.com/paco_astro" title="X"><svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" role="img" aria-label="X" style="vertical-align:-3px"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a> </li>
+
+    </ul>
+
+  
+
+</footer>
+    
+    
+    
+    
+    
+</html>
