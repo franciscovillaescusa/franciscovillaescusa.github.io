@@ -375,8 +375,10 @@ body{
 
 
 .denario-section {
+  clear: both;          /* start below the floated video above */
+  padding-top: 1em;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
 }
 
@@ -480,6 +482,15 @@ body{
 .ml-papers li { margin-bottom: 0.25em; }
 .ml-more { margin-top: 2em; text-align: center; }
 
+/* ##############  HOME: VIDEO NEXT TO A SHORT PARAGRAPH ############## */
+.video-row { clear: both; display: flex; align-items: center; gap: 1.2em; margin: 1em 0; }
+.video-row .presentation-video2 { float: none; flex: 0 0 auto; padding: 0; width: auto; }
+.video-row p { margin: 0; }
+
+/* ##############  HOME: TWO VIDEOS SIDE BY SIDE ############## */
+.video-pair { clear: both; display: flex; gap: 1.2em; margin: 1.5em 0 0.5em; }
+.video-pair video { flex: 1 1 0; min-width: 0; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: #000; }
+
 /* ##############  HOME: PROJECT CARDS ############## */
 .projects { margin: 2.5em 0 1em; }
 .projects-heading { font-size: 2em; font-weight: normal; text-align: center; margin: 0 0 0.6em; }
@@ -549,6 +560,8 @@ body{
         float: none; width: 100%; padding: 0; margin: 1em 0;
     }
     .denario-section { flex-direction: column; }
+    .video-row { flex-direction: column; align-items: stretch; }
+    .video-pair { flex-direction: column; }
     .denario-section img { max-width: 100%; }
     .project-card { width: 100%; }
     .projects-heading { font-size: 1.6em; }
