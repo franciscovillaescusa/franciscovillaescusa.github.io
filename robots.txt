@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /ic.html
+
+Sitemap: https://franciscovillaescusa.github.io/sitemap.xml
