@@ -1,172 +1,127 @@
-html{
-    font-family: Verdana;   
-/*    min-width: 750px;  */
-/*    max-width: 1000px;*/
+/* HADES pages: same salmon look as before, but fluid so it works on phones */
+html {
+    font-family: 'Source Sans 3', Verdana, Arial, sans-serif;
+    color: #222;
 }
 
-body{
-    margin:  0%;
-    padding: 0%;
-}
+body { margin: 0; padding: 0; line-height: 1.45; }
 
-.header{
+a { color: #1a5fb4; }
+
+/* ---------- navigation bar ---------- */
+.header {
     background-color: lightsalmon;
-    margin:         0em;
-    padding-top:    0.5em;
-    padding-bottom: 0.5em;
-    padding-right:  0em;
-    padding-left:   0em;
-    font-size: 2vw;;
-    display: table;
-    width: 100%;
+    margin: 0;
+    padding: 0.6em 5%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3em 1.5em;
+    font-size: clamp(18px, 2vw, 30px);
 }
+.header li a { text-decoration: none; color: black; }
+.header li a:hover { text-decoration: underline; }
+.header li a.current { border-bottom: 3px solid black; }
 
-.header li{
-    display: table-cell;
-    width: 5%;
-    text-align:     center;
-    vertical-align: middle;
-}
-
-.header li a{
-    text-decoration: none;
-    color: black;
-}
-
-#HADES{
+#HADES {
     font-family: serif;
     font-weight: bold;
-    padding-left:  10%;
-    padding-right: 20%;
-    font-size: 4vw;
-    vertical-align: middle;
-    text-decoration: none;
+    font-size: clamp(30px, 4vw, 60px);
+    margin-right: auto;
+    padding-right: 1em;
+}
+#HADES a { border-bottom: none; }
+
+/* ---------- home ---------- */
+.hades_main {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 3% 5% 2em;
+    font-size: clamp(17px, 1.5vw, 22px);
+}
+.hades_main p { margin: 0 0 0.8em; }
+.first_line { font-weight: bold; }
+.hades-photo {
+    float: left;
+    width: 42%;
+    margin: 0 2.5em 1.5em 0;
 }
 
+/* ---------- team ---------- */
+.team {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 3% 5%;
+    font-size: clamp(18px, 2vw, 28px);
+}
+.team li { margin-bottom: 0.8em; }
 
-.publication_list{
+/* ---------- publications ---------- */
+.publication_list {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 3% 5% 2em 8%;
+    font-size: clamp(17px, 1.6vw, 22px);
+}
+.publication_list li { margin-bottom: 1.6em; }
+.publication_list p { margin: 0.2em 0; }
+.pub_title { font-weight: bold; font-size: 1.1em; }
+.pub_journal { font-style: italic; }
+
+/* ---------- data ---------- */
+.data_type {
+    text-align: center;
+    font-size: clamp(34px, 4vw, 58px);
+    font-family: fantasy;
+}
+.data_type p { margin: 0; padding: 3% 0 0; }
+
+.data_text { max-width: 80rem; margin: 0 auto; padding: 0 5%; }
+.data_text p { font-size: clamp(17px, 1.5vw, 22px); }
+
+.sim-grid {
+    max-width: 80rem;
+    margin: 1.5em auto 2.5em;
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em 3em;
+}
+.sim-grid a { text-decoration: none; width: 13em; }
+.sim, .sim2, .sim4 { width: 100%; }
+.sim p, .sim2 p, .sim4 p {
     margin: 0;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 4%;
-    width: 80%;
-    font-family: Times;
-    font-size: 1.6vw;
-}
-
-.publication_list li{
-    margin-bottom: 4%;
-}
-
-.pub_title{
-    font-weight: bold;
-    font-size: 1.8vw;
-}
-
-.pub_journal{
-    font-family: fantasy;
-}
-
-.team{
-    margin: 0%;
-    padding: 3% 10% 3% 10%;
-    font-size: 2vw;
-}
-
-.team li{
-    margin-bottom: 3%;
-}
-
-.hades_main{
-    margin: 0%;
-    padding: 3% 0% 0% 0%;
-}
-
-.hades_main p{
-    margin: 0%;
-    padding: 0% 5% 1.5% 0%;
-    font-size: 1.5vw;
-}
-
-.first_line{
-    font-weight: bold;
-}
-
-.hades-photo{
-    margin-top: 0%;
-    padding: 0% 2% 5% 5%;
-    float: left;
-    width: 40%;
-}
-
-.sim, .sim2, .sim4{
-    padding: 3% 5% 3% 5%;
-    float: left;
-    width: 15%;
-}
-
-.sim3{
-    padding: 4% 5% 10% 5%;
-    float: left;
-    width: 15%;
-}
-
-.sim p{
-    margin: 0%;
-    padding: 10% 0% 15% 0%;
-    background-color: lightskyblue;    
-    border: 0.7vw solid black;
+    padding: 1.2em 0.3em;
+    border: 0.45em solid black;
     opacity: 0.6;
     text-align: center;
-    font-size: 1.8vw;
+    font-size: clamp(18px, 1.8vw, 26px);
     color: darkred;
     font-weight: bold;
 }
+.sim p  { background-color: lightskyblue; }
+.sim2 p { background-color: lightgreen; }
+.sim4 p { background-color: lightcoral; color: purple; }
+.sim-grid a:hover p { opacity: 0.85; }
 
-.sim2 p{
-    margin: 0%;
-    padding: 10% 0% 15% 0%;
-    background-color: lightgreen;    
-    border: 0.7vw solid black;
-    opacity: 0.6;
-    text-align: center;
-    font-size: 1.8vw;
-    color: darkred;
-    font-weight: bold;
+/* ---------- phones ---------- */
+@media (max-width: 700px) {
+    .header { padding: 0.6em 16px; justify-content: flex-start; }
+    #HADES { width: 100%; padding: 0; }
+    .hades_main, .team, .publication_list, .data_text, .sim-grid { padding-left: 16px; padding-right: 16px; }
+    .publication_list { padding-left: 36px; }
+    .hades-photo { float: none; width: 100%; margin: 0 0 1em; }
+    .sim-grid { gap: 1em; }
+    .sim-grid a { width: calc(50% - 0.5em); }
+    .sim p, .sim2 p, .sim4 p { font-size: 16px; padding: 1em 0.2em; }
 }
 
-.sim4 p{
-    margin: 0%;
-    padding: 10% 0% 15% 0%;
-    background-color: lightcoral;    
-    border: 0.7vw solid black;
-    opacity: 0.6;
-    text-align: center;
-    font-size: 1.8vw;
-    color: purple;
-    font-weight: bold;
+.hades-note {
+    background: #fff3e8;
+    border-left: 6px solid lightsalmon;
+    padding: 0.8em 1em !important;
+    overflow: hidden;
 }
-
-.data_type{
-    text-align: center;
-    font-size: 4vw;
-    font-family: fantasy;
-}
-
-.data_type p{
-    margin: 0%;
-    padding: 3% 0% 0% 0%;
-}
-
-
-.data_text p{
-    padding: 0% 5% 0% 5%;
-    text-align: left;
-    font-size: 1.5vw;
-}
-
-.data_text2{
-    padding: 10% 10% 10% 10%;
-    display: block;
-}
-
