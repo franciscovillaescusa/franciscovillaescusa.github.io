@@ -24,7 +24,7 @@ body{
 
 /* ##############  HEADER ############## */
 .header{
-    background-image: url('img/LSS.png');
+    background-image: url('img/LSS.jpg');
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +44,7 @@ body{
 }
 
 .header_im{
-    background-image: url('img/im.png');
+    background-image: url('img/im.jpg');
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +54,7 @@ body{
 }
 
 .header_neutrinos{
-    background-image: url('img/neutrinos.png');
+    background-image: url('img/neutrinos.jpg');
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,7 +64,7 @@ body{
 }
 
 .header_publications{
-    background-image: url('img/books.png');
+    background-image: url('img/books.jpg');
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,7 +74,7 @@ body{
 }
 
 .header_code{
-    background-image: url('img/code.png');
+    background-image: url('img/code.jpg');
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,7 +177,7 @@ body{
     position:absolute;
     top:100%;
     z-index:999;
-/*    background-image: url('img/LSS.png');*/
+/*    background-image: url('img/LSS.jpg');*/
     background-color: lightgray;
     background-repeat: no-repeat;
     background-size: cover;
