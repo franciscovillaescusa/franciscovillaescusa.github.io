@@ -75,6 +75,17 @@ body{
     position: absolute;
 }
 
+.header_talks{
+    background-image: url('video/Hydro.jpg');
+    background-position: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+
 .header_code{
     background-image: url('img/code.jpg');
     text-align: center;
@@ -237,7 +248,7 @@ body{
 
 /* ##############  HEADER: same look on every page ############## */
 .header, .header_research, .header_im, .header_neutrinos, .header_publications,
-.header_code, .header_ic, .header_uc {
+.header_code, .header_ic, .header_uc, .header_talks {
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35);   /* darken photo so text reads */
 }
 .header-name p, .header-menu > li > a {
@@ -538,6 +549,18 @@ a { color: #1a5fb4; }
 .code-links { margin: 0; display: flex; flex-wrap: wrap; gap: 0.5em; }
 .code-links a { font-size: 1em; font-weight: 600; text-decoration: none; color: #1a5fb4; border: 1.5px solid #1a5fb4; border-radius: 5px; padding: 0.25em 0.8em; }
 .code-links a:hover { background: #1a5fb4; color: white; }
+.talk-grid { margin-top: 1.2em; }
+.project-card.talk-card { width: calc((100% - 1.4em) / 2); }
+.talk-thumb { position: relative; display: block; }
+.project-card.talk-card img { aspect-ratio: 16 / 9; object-fit: cover; }
+.talk-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 64px; height: 44px; border-radius: 12px; background: rgba(0,0,0,0.7); color: white; font-size: 22px; display: flex; align-items: center; justify-content: center; }
+.talk-card:hover .talk-play { background: #e00; }
+.talk-where { font-size: 1em; color: #7a5a00; font-weight: 600; margin: 0 0.8em 0.3em; }
+.talk-more { font-size: 1.15em; margin: 1.2em 0 0; }
+.press-list { list-style: none; padding: 0; margin: 0.8em 0 1em; font-size: 1.2em; }
+.press-list li { margin: 0 0 0.9em; }
+.press-list a { font-weight: 600; }
+.press-meta { display: block; color: #666; font-size: 0.9em; font-style: italic; }
 .other-topics { font-size: 1.2em; margin: 1.8em 0 0.5em; }
 .projects-heading { font-size: 2em; font-weight: normal; text-align: center; margin: 0 0 0.6em; }
 .project-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.4em; }
@@ -581,7 +604,7 @@ a { color: #1a5fb4; }
 
     /* header: name and menu stack, and the page content starts below them */
     .header, .header_research, .header_im, .header_neutrinos, .header_publications,
-    .header_code, .header_ic, .header_uc {
+    .header_code, .header_ic, .header_uc, .header_talks {
         position: static; height: auto; padding: 14px 0 10px;
     }
     .header-name { font-size: 30px; line-height: 1.15; margin: 0 0 10px; }
@@ -620,6 +643,8 @@ a { color: #1a5fb4; }
     .publications_links { padding-top: 1em; padding-bottom: 1em; }
     .publications_links li { display: block; width: auto; font-size: 22px; margin: 0.4em 0; }
     .pub-full { font-size: 1.1em; }
+    .project-card.talk-card { width: 100%; }
+    .press-list { font-size: 1.05em; }
     .code-item { flex-direction: column; gap: 0.8em; }
     .code-item img { width: 100%; }
     .code-desc { font-size: 1.05em; }
